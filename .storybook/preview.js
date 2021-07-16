@@ -1,4 +1,7 @@
-import { DocsPage } from "storybook-addon-deps/blocks/DocsPage";
+import { addDecorator } from "@storybook/react";
+import { withDependenciesContext } from "storybook-addon-deps";
+
+addDecorator(withDependenciesContext);
 
 export const parameters = {
 	actions: { argTypesRegex: "^on[A-Z].*" },
